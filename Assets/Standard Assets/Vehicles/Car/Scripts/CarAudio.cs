@@ -1,8 +1,8 @@
-using System;
 using UnityEngine;
+using UnityStandardAssets.Vehicles.Car;
 using Random = UnityEngine.Random;
 
-namespace UnityStandardAssets.Vehicles.Car
+namespace Standard_Assets.Vehicles.Car.Scripts
 {
     [RequireComponent(typeof (CarController))]
     public class CarAudio : MonoBehaviour
@@ -90,7 +90,7 @@ namespace UnityStandardAssets.Vehicles.Car
             float camDist = (Camera.main.transform.position - transform.position).sqrMagnitude;
 
             // stop sound if the object is beyond the maximum roll off distance
-            if (m_StartedSound && camDist > maxRolloffDistance*maxRolloffDistance)
+            /*if (m_StartedSound && camDist > maxRolloffDistance*maxRolloffDistance)
             {
                 StopSound();
             }
@@ -99,7 +99,7 @@ namespace UnityStandardAssets.Vehicles.Car
             if (!m_StartedSound && camDist < maxRolloffDistance*maxRolloffDistance)
             {
                 StartSound();
-            }
+            }*/
 
             if (m_StartedSound)
             {
