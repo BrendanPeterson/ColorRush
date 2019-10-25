@@ -55,18 +55,18 @@ public class PlayerNameInputField : MonoBehaviour
     /// Sets the name of the player, and save it in the PlayerPrefs for future sessions.
     /// </summary>
     /// <param name="value">The name of the Player</param>
-    public void SetPlayerName(string value)
+    public void SetPlayerName(Text value)
     {
         // #Important
-        if (string.IsNullOrEmpty(value))
+        if (string.IsNullOrEmpty(value.text))
         {
-            Debug.LogError("Player Name is null or empty");
+            Debug.LogError("Player Name is null or empty: " + value.text);
             return;
         }
-        PhotonNetwork.NickName = value;
+        PhotonNetwork.NickName = value.text;
+        Debug.Log("Set Nickname to " + value.text);
 
-
-        PlayerPrefs.SetString(playerNamePrefKey,value);
+        PlayerPrefs.SetString(playerNamePrefKey,value.text);
     }
 
 
