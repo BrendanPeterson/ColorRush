@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Tyler/Car Test.unity
-    guid: 7a2aaae8da253924b9cd2c44baf21765
-  - enabled: 0
-    path: Assets/Scenes/samplescene.unity
-    guid: cbfe36cfddfde964d9dfce63a355d5dd
+    path: Assets/Scenes/Launcher.unity
+    guid: 781d037a9a916914f98647013d8ce6ef
+  - enabled: 1
+    path: Assets/Scenes/TestTrack.unity
+    guid: cda211b0e90919348a696ada0c595754
   m_configObjects: {}
